@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <!--中间是内容fragment,动态添加-->
+    <LinearLayout
+        android:id="@+id/linearlayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+       <!--底部为自定义导航页-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/main_tab_layout"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        tl:tl_indicator_height="0dp"
+        tl:tl_iconHeight="30dp"
+        tl:tl_iconWidth="30dp"
+        tl:tl_indicator_color="#ff0000"
+        tl:tl_textSelectColor="#ff00"
+        tl:tl_textUnselectColor="#000000"
+        tl:tl_textsize="14sp"
+        tl:tl_underline_height="0dp" />
+
+</LinearLayout>
+

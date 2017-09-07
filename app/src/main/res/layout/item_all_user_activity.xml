@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/new_card">
+
+        <TextView
+            android:id="@+id/tvItemAllUserActivityUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户ID"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tvItemAllUserActivityUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvItemAllUserActivityPassWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnItemAllUserActivityMoreInfo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="查看该用户更多信息"
+                android:textColor="@color/black"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btnItemAllUserActivityDeleteUser"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="删除该用户"
+                android:textColor="@color/black"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnItemAllUserActivityTicket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="查看该用户购票记录"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

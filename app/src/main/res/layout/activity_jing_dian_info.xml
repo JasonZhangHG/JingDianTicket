@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:id="@+id/tvJingDianInfoActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="景点" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivJingDianInfoActivityPicture"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bai_di_cheng"/>
+
+        <TextView android:id="@+id/tvJingDianInfoActivityYuPiao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="余票数"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+    </FrameLayout>
+
+    <TextView android:id="@+id/tvJingDianInfoActivityPrice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="票价："
+        android:textColor="#ff00"
+        android:textSize="15sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp">
+       <Button
+           android:id="@+id/btnJingDianInfoActivityBuyTic"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="购票"
+           android:textColor="@color/black"
+           android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnJingDianInfoActivityShouChangTic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="添加到购物车"
+            android:textColor="@color/black"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnJingDianInfoActivityInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="景点介绍"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:contentInsetStart="0dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="个人页" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/btnFragment3UserInfo"
+        android:layout_marginTop="16dp"
+        android:text="个人信息管理"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_orange_selector" />
+
+    <Button
+        android:id="@+id/btnFragment3BuyTicket"
+        android:layout_marginTop="16dp"
+        android:text="查看已购买门票"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_orange_selector" />
+
+    <Button
+        android:id="@+id/btnFragment3Manage"
+        android:layout_marginTop="16dp"
+        android:text="管理员功能"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_orange_selector" />
+
+</LinearLayout>
+
